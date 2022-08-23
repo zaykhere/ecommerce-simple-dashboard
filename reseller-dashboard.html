@@ -11,19 +11,14 @@
     <meta name="description"
         content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Ample Admin Lite Template by WrapPixel</title>
+    <title>Simple Admin Reseller Ecommerce</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <!-- Custom CSS -->
-   <link href="css/style.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="./css/custom-style.css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
+   
+    <!-- Custom CSS -->
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,7 +45,7 @@
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
-                    <a class="navbar-brand" href="dashboard.html">
+                    <a class="navbar-brand" href="./reseller-dashboard.html">
                         <!-- Logo icon -->
                         <b class="logo-icon">
                             <!-- Dark Logo icon -->
@@ -60,7 +55,7 @@
                         <!-- Logo text -->
                         <span class="logo-text">
                             <!-- dark Logo text -->
-                            <img src="plugins/images/admin-panel.png"  alt="homepage" />
+                            <img src="plugins/images/reseller-logo.PNG"  alt="homepage" />
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -76,12 +71,7 @@
                 <!-- End Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent" data-navbarbg="skin5">
-                    <ul class="navbar-nav d-none d-md-block d-lg-none">
-                        <li class="nav-item">
-                            <a class="nav-toggler nav-link waves-effect waves-light text-white"
-                                href="javascript:void(0)"><i class="ti-menu ti-close"></i></a>
-                        </li>
-                    </ul>
+                   
                     <!-- ============================================================== -->
                     <!-- Right side toggle and nav items -->
                     <!-- ============================================================== -->
@@ -102,9 +92,13 @@
                         <!-- User profile and search -->
                         <!-- ============================================================== -->
                         <li>
+                            
                             <a class="profile-pic" href="#">
                                 <img src="plugins/images/users/varun.jpg" alt="user-img" width="36"
-                                    class="img-circle"><span class="text-white font-medium">Admin</span></a>
+                                    class="img-circle"><span class="text-white font-medium">Reseller</span></a>
+                        </li>
+                        <li>
+                            <button class="btn-danger text-white">Logout</button>
                         </li>
                         <!-- ============================================================== -->
                         <!-- User profile and search -->
@@ -127,38 +121,38 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./dashboard.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./reseller-dashboard.html"
                                 aria-expanded="false">
                                 
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./package-table.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./service-table.html"
                                 aria-expanded="false">
                                 
-                                <span class="hide-menu">Packages</span>
+                                <span class="hide-menu">Services</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./users-table.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./clients-table.html"
                                 aria-expanded="false">
                                 
-                                <span class="hide-menu">Users</span>
+                                <span class="hide-menu">Clients</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./fax-data.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./sales-data.html"
                                 aria-expanded="false">
                                 
-                                <span class="hide-menu">Fax Data</span>
+                                <span class="hide-menu">Sales Data</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./user-reports.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./bug-reports.html"
                                 aria-expanded="false">
                                 
-                                <span class="hide-menu">User Reports</span>
+                                <span class="hide-menu">Bug Reports</span>
                             </a>
                         </li>
                         
@@ -176,14 +170,14 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper" style="min-height: 250px;">
+        <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Add A Reseller</h4>
+                        <h4 class="page-title">Dashboard</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
@@ -204,66 +198,107 @@
             <!-- ============================================================== -->
             <div class="container-fluid">
                 <!-- ============================================================== -->
-                <!-- Start Page Content -->
+                <!-- Three charts -->
                 <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Add A Reseller</h3>
-                            <form action="" class="custom-form user-form">
-                                <div class="col-md-12 form-group">
-                                    <label for="f_name"> First Name</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="f_name" placeholder="first name..." />
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label for="l_name"> Last Name</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="l_name" placeholder="last name..." />
-                                </div>
-                                
-                                <div class="col-md-12 form-group">
-                                    <label for="email"> Email </label>
-                                    <input type="text" class="w-100 p-1 m-3" name="email" placeholder="email" >
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label for="password"> Password </label>
-                                    <input type="password" class="w-100 p-1 m-3" name="password" placeholder="password....">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="service">Service</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="service" placeholder="service">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="contract-start">Contract Start</label>
-                                    <input type="date" class="w-100 p-1 m-3" name="contract-start" placeholder="Contract Start...">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="contract-end">Contract End</label>
-                                    <input type="date" class="w-100 p-1 m-3" name="contract-end" placeholder="Contract End...">
-                                </div>
-
-                                
-                               
-                                <div class="text-center custom-form-button-container">
-                                    <button class="btn btn-danger text-white" type="submit"> Submit</button>
-                                </div>
-                                
-                            </form>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Users</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-success">659</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Resellers</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash2"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-purple">869</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Reports</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash3"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-info">911</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <!-- ============================================================== -->
-                <!-- End PAge Content -->
+                <!-- PRODUCTS YEARLY SALES -->
+                
                 <!-- ============================================================== -->
+                <!-- RECENT USERS -->
                 <!-- ============================================================== -->
-                <!-- Right sidebar -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="white-box">
+                            <div class="d-md-flex mb-3">
+                                <h3 class="box-title mb-0">Recent Clients</h3>
+                                
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table no-wrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">Name</th>
+                                            <th class="border-top-0">Status</th>
+                                            <th class="border-top-0">Email</th>
+                                            <th class="border-top-0">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="txt-oflo">Elite admin</td>
+                                            <td>SALE</td>
+                                            <td class="txt-oflo">elite@gmail.com</td>
+                                            <td><span class="text-success">$24</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="txt-oflo">Real Homes WP Theme</td>
+                                            <td>EXTENDED</td>
+                                            <td class="txt-oflo">realhomes@gmail.com</td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="txt-oflo">Ample Admin</td>
+                                            <td>EXTENDED</td>
+                                            <td class="txt-oflo">ample@gmail.com</td>
+                                            <td><span class="text-info">$1250</span></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- ============================================================== -->
-                <!-- .right-sidebar -->
+                <!-- Recent Comments -->
                 <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+                
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -291,12 +326,17 @@
     <!-- Bootstrap tether Core JavaScript -->
     <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app-style-switcher.js"></script>
+    <script src="plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
     <!--Wave Effects -->
     <script src="js/waves.js"></script>
     <!--Menu sidebar -->
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
+    <!--This page JavaScript --> 
+    <!--chartis chart-->
+  
+    <script src="js/pages/dashboards/dashboard1.js"></script>
 </body>
 
 </html>

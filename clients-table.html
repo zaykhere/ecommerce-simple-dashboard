@@ -17,7 +17,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
     <!-- Custom CSS -->
    <link href="css/style.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="./css/custom-style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -176,14 +175,14 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper" style="min-height: 250px;">
+        <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Add A Reseller</h4>
+                        <h4 class="page-title">Clients Information</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
@@ -207,50 +206,57 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Add A Reseller</h3>
-                            <form action="" class="custom-form user-form">
-                                <div class="col-md-12 form-group">
-                                    <label for="f_name"> First Name</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="f_name" placeholder="first name..." />
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label for="l_name"> Last Name</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="l_name" placeholder="last name..." />
-                                </div>
-                                
-                                <div class="col-md-12 form-group">
-                                    <label for="email"> Email </label>
-                                    <input type="text" class="w-100 p-1 m-3" name="email" placeholder="email" >
-                                </div>
-                                <div class="col-md-12 form-group">
-                                    <label for="password"> Password </label>
-                                    <input type="password" class="w-100 p-1 m-3" name="password" placeholder="password....">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="service">Service</label>
-                                    <input type="text" class="w-100 p-1 m-3" name="service" placeholder="service">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="contract-start">Contract Start</label>
-                                    <input type="date" class="w-100 p-1 m-3" name="contract-start" placeholder="Contract Start...">
-                                </div>
-
-                                <div class="col-md-12 form-group">
-                                    <label for="contract-end">Contract End</label>
-                                    <input type="date" class="w-100 p-1 m-3" name="contract-end" placeholder="Contract End...">
-                                </div>
-
-                                
-                               
-                                <div class="text-center custom-form-button-container">
-                                    <button class="btn btn-danger text-white" type="submit"> Submit</button>
-                                </div>
-                                
-                            </form>
+                            <h3 class="box-title">Clients Table</h3>
+                            <a href="/add-client.html" style="float:right;" class="btn d-grid btn-danger text-white"> Add A Client</a>
+                            <p class="text-muted">Registered Clients Information</p>
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">First Name</th>
+                                            <th class="border-top-0">Username</th>
+                                            <th class="border-top-0">Email</th>
+                                            <th class="border-top-0">Active</th>
+                                            <th class="border-top-0">Contract Start</th>
+                                            <th class="border-top-0">Contract End</th>
+                                            <th class="border-top-0">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Deshmukh</td>
+                                            <td>Prohaska</td>
+                                            <td>@Genelia</td>
+                                            <td>Yes</td>
+                                            <td>9-Aug-2022</td>
+                                            <td>9-October-2022</td>
+                                            <td> 
+                                                <a href="./edit-client.html" class="btn btn-info text-white">Edit</a>
+                                                <button class="btn btn-danger text-white">Delete</button> 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Deshmukh</td>
+                                            <td>Gayle</td>
+                                            <td>@Ritesh</td>
+                                            <td>No</td>
+                                            <td>9-June-2022</td>
+                                            <td>9-Aug-2022</td>
+                                            <td> 
+                                                <a href="./edit-client.html" class="btn btn-info text-white">Edit</a>
+                                                <button class="btn btn-danger text-white">Delete</button> 
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
