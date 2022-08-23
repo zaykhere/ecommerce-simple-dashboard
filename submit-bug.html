@@ -11,7 +11,7 @@
     <meta name="description"
         content="Ample Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
     <meta name="robots" content="noindex,nofollow">
-    <title>Ample Admin Lite Template by WrapPixel</title>
+    <title>Admin Panel</title>
     <link rel="canonical" href="https://www.wrappixel.com/templates/ample-admin-lite/" />
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
@@ -61,6 +61,7 @@
                         <span class="logo-text">
                             <!-- dark Logo text -->
                             <img src="plugins/images/admin-panel.png"  alt="homepage" />
+                            
                         </span>
                     </a>
                     <!-- ============================================================== -->
@@ -122,7 +123,6 @@
         <aside class="left-sidebar" data-sidebarbg="skin6">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
-                <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <!-- User Profile-->
@@ -176,14 +176,14 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper">
+        <div class="page-wrapper" style="min-height: 250px;">
             <!-- ============================================================== -->
             <!-- Bread crumb and right sidebar toggle -->
             <!-- ============================================================== -->
             <div class="page-breadcrumb bg-white">
                 <div class="row align-items-center">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Bug Reports</h4>
+                        <h4 class="page-title">Submit Bug Report</h4>
                     </div>
                     <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
                         <div class="d-md-flex">
@@ -205,47 +205,30 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-md-12">
                         <div class="white-box">
-                            <h3 class="box-title">Bug Reports</h3>
-                            <a href="./submit-bug.html" class="btn btn-danger text-white font-white" style="float:right;">Submit Bug</a>
-                            
-                            <p class="text-muted">Bug Reports Information</p>
-                            <div class="table-responsive">
-                                <input type="text" placeholder="Search..." class="form-control mt-2 mb-3 report-search">
-                                <table class="table text-nowrap report-table">
-                                    <thead>
-                                        <tr>
-                                            <th class="border-top-0">Report ID</th>
-                                            <th class="border-top-0">Image</th>
-                                            <th class="border-top-0">Creation Date</th>
-                                            <th class="border-top-0">Creator</th>
-                                            <th class="border-top-0">Creator ID</th>
-                                            <th class="border-top-0">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>12</td>
-                                            <td><img src="./plugins/images/users/2.jpg" height="50" alt=""></td>
-                                            <td>22-Aug-2019</td>
-                                            <td>Abbas</td>
-                                            <td> 1 </td>
-                                            <td> <a class="btn d-grid btn-danger text-white" href="./plugins/images/users/2.jpg">View Image</a>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td>
-                                            <td><img src="./plugins/images/users/2.jpg" height="50" alt=""></td>
-                                            <td>27-Aug-2021</td>
-                                            <td>Ali</td>
-                                            <td> 2 </td>
-                                            <td> <a class="btn d-grid btn-danger text-white" href="./plugins/images/users/2.jpg">View Image</a>
-                                        </tr>
-                                        
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
+                            <h3 class="box-title">Submit Bug Report</h3>
+                            <form action="" class="custom-form user-form">
+                                <div class="col-md-12 form-group">
+                                    <label for="bug_name"> Service Name</label>
+                                    <input type="text" class="w-100 p-1 m-3" name="service_name" placeholder="Service Name..." />
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="bug_description"> Description </label>
+                                    <input type="text" class="w-100 p-1 m-3" name="bug_description" placeholder="Bug Description..." />
+                                </div>
+
+                                <div class="col-md-12 form-group">
+                                    <label for="bug_image"> Upload Image</label>
+                                    <input type="file" class="w-100 p-1 m-3" name="bug_image" placeholder="Upload Image..." />
+                                </div>
+                                
+                               
+                                <div class="text-center custom-form-button-container">
+                                    <button class="btn btn-danger text-white" type="submit"> Submit</button>
+                                </div>
+                                
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -292,28 +275,6 @@
     <script src="js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.js"></script>
-    <script>
-        const reportSearch = document.querySelector(".report-search");
-
-reportSearch.addEventListener("keyup", function(e){
-  let filter, table, tr, td, i, txtValue;
-  filter = e.target.value.toLowerCase();
-  table = document.querySelector(".report-table");
-  tr = table.getElementsByTagName("tr");
-
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[4];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toLowerCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-})
-    </script>
 </body>
 
 </html>
